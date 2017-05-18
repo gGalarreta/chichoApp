@@ -1,0 +1,23 @@
+<%= form_tag "#{}", class: "validate", method: :get, remote: true do %>
+  <div class="row form-group">
+    <div class="col-sm-5">
+      <div class="col-sm-4">
+        <%= label_tag :nombre, "nombre", class: "control-tag" %>
+      </div>
+      <div class="col-sm-8">
+        <%= text_field_tag :first_name, nil, class: "form-control" %>
+      </div>
+    </div>
+    <div class="col-sm-5">
+      <div class="col-sm-4">
+        <%= label_tag :apellido, "Apellido", class: "control-tag" %>
+      </div>
+      <div class="col-sm-8">
+        <%= text_field_tag :last_name, nil, class: "form-control" %>
+      </div>
+    </div>
+    <div class="col-sm-12">
+        <input class="btn btn-default pull-right" type="submit" value="Search">
+    </div>
+  </div>
+<% end %>

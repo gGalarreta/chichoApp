@@ -1,0 +1,8 @@
+<h1>
+  Necesidades
+  <%= link_to 'Nueva Necesidad', new_need_path, class: "btn btn-primary align-right"  %>
+</h1>
+
+<div id="table-users">
+  <%= render 'needs_table', needs: @needs %>
+</div>

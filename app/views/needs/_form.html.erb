@@ -1,0 +1,39 @@
+<%= form_for @need, url: path, method: method, :html => { class: "form-horizontal validate" } do |f| %>
+
+  <div class="form-group col-sm-12">
+    <%= f.label :nombre, class: "col-sm-2 text-left" %>
+    <div class="col-sm-6">
+      <%= f.text_field :name, class: "form-control" %>
+    </div>
+  </div>
+
+
+  <div class="form-group col-sm-12">
+    <%= f.label :descripcion	, class: "col-sm-2 text-left" %>
+    <div class="col-sm-6">
+      <%= f.text_field :description, class: "form-control " %>
+    </div>
+  </div>
+
+  <div class="form-group col-sm-12">
+    <%= f.label :lugar_de_venta, class: "col-sm-2 text-left" %>
+    <div class="col-sm-6">
+      <%= f.text_field :sales_place, class: "form-control " %>
+    </div>
+  </div>
+
+  <div class="form-group col-sm-12">
+    <%= f.label :precio, class: "col-sm-2 text-left" %>
+    <div class="col-sm-6">
+      <%= f.text_field :value, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-md-8 col-sm-8 col-xs-12">
+      <div class="col-sm-12 text-right">
+        <%= f.submit "Save", class: "btn btn-primary", data: {disable_with: 'Please Wait...'}  %>
+      </div>
+    </div>
+  </div>
+<% end %>

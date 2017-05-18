@@ -1,0 +1,46 @@
+<%= form_for @activity, url: path, method: method, :html => { class: "form-horizontal validate" } do |f| %>
+
+  <div class="form-group col-sm-12">
+    <%= f.label :nombre, class: "col-sm-2 text-left" %>
+    <div class="col-sm-6">
+      <%= f.text_field :name, class: "form-control" %>
+    </div>
+  </div>
+
+
+  <div class="form-group col-sm-12">
+    <%= f.label :descripcion	, class: "col-sm-2 text-left" %>
+    <div class="col-sm-6">
+      <%= f.text_field :description, class: "form-control " %>
+    </div>
+  </div>
+
+  <div class="form-group col-sm-12">
+    <%= f.label :lugar  , class: "col-sm-2 text-left" %>
+    <div class="col-sm-6">
+      <%= f.text_field :place, class: "form-control " %>
+    </div>
+  </div>
+
+  <div class="form-group col-sm-12">
+    <%= f.label :dia_del_evento, class: "col-sm-2 text-left" %>
+    <div class="col-sm-6">
+      <%= f.date_field :show_time, value: Time.now.strftime('%Y-%m-%d'), class: "form-control " %>
+    </div>
+  </div>
+
+  <div class="form-group col-sm-12">
+    <%= f.label :precio_estimado, class: "col-sm-2 text-left" %>
+    <div class="col-sm-6">
+      <%= f.text_field :value, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-md-8 col-sm-8 col-xs-12">
+      <div class="col-sm-12 text-right">
+        <%= f.submit "Save", class: "btn btn-primary", data: {disable_with: 'Please Wait...'}  %>
+      </div>
+    </div>
+  </div>
+<% end %>

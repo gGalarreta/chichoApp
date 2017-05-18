@@ -1,0 +1,2 @@
+class OwnActivity < ApplicationRecord
+end

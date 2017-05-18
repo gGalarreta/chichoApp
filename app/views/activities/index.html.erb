@@ -1,0 +1,12 @@
+<h1>
+  Actividades
+  <%= link_to 'Nueva Actividad', new_activity_path, class: "btn btn-primary align-right"  %>
+</h1>
+
+<div class="well">
+  <%= render 'search' %>
+</div>
+
+<div id="table-users">
+  <%= render 'activities_table', activities: @activities %>
+</div>
