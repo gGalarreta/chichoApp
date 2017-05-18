@@ -34,9 +34,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :production do
-  gem 'pg'
-end
+gem 'pg'
+
 gem 'devise'
 
 gem 'font-awesome-rails'
